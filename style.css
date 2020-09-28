@@ -1,0 +1,105 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "scr scr scr scr"
+    "ac ac dele divi"
+    "one two three multi"
+    "four five six sum"
+    "seven eight nine subs"
+    "dot zer equal equal";
+    width: 400px;
+    height: 600px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    grid-gap: 4px;
+}
+
+.buttons{
+    background-color: khaki;
+    height: 100%;
+    width: 100%;
+}
+
+.buttons:hover{
+    background-color: goldenrod; 
+}
+
+#screen{
+    grid-area: scr;
+    background-color: mediumspringgreen;
+    height: 100%;
+    width: 100%;
+    text-align: right;
+}
+
+#screen>p{
+    padding: 10px;
+}
+
+#acBtn{
+    grid-area: ac;
+}
+
+#delBtn{
+    grid-area: dele;
+}
+
+#one{
+    grid-area: one;
+}
+
+#two{
+    grid-area: two;
+}
+
+#three{
+    grid-area: three;
+}
+
+#four{
+    grid-area: four;
+}
+
+#five{
+    grid-area: five;
+}
+
+#six{
+    grid-area: six;
+}
+
+#seven{
+    grid-area: seven;
+}
+
+#eight{
+    grid-area: eight;
+}
+
+#nine{
+    grid-area: nine;
+}
+
+#zero{    grid-area: zer;}
+
+#divide{    grid-area: divi;}
+
+#multiply{     grid-area: multi;}
+
+#sum{    grid-area: sum;}
+
+#subs{    grid-area: subs;}
+
+#dots{    grid-area: dot;}
+
+#equal{    grid-area: equal;}

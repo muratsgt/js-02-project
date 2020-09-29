@@ -2,7 +2,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 #container{
@@ -31,7 +30,12 @@ body{
 }
 
 .buttons:hover{
-    background-color: goldenrod; 
+    background-color: goldenrod;
+    cursor: pointer;
+}
+
+.buttons:active{
+    background-color: sienna;
 }
 
 #screen{
@@ -40,6 +44,21 @@ body{
     height: 100%;
     width: 100%;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#upperScreen{
+    font-size: 0.8em;
+    padding-right: 10px;
+
+}
+
+#lowerScreen{
+    font-size: 1.4em;
+    padding-right: 10px;
+    min-height: 1em;
 }
 
 #screen>p{
